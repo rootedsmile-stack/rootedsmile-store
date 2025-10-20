@@ -1,1 +1,0 @@
-<h2>Thank you! 🎉 Your order was successful.</h2>
