@@ -1,0 +1,1 @@
+<h2>Order cancelled. You can try again anytime.</h2>
