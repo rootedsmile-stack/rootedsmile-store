@@ -41,16 +41,25 @@
   {#if orders.length === 0}
     <p>No orders yet.</p>
   {:else}
-    <table>
-      <tr><th>Date</th><th>Status</th><th>Amount</th><th>Currency</th></tr>
-      {#each orders as o}
-        <tr>
-          <td>{new Date(o.created_at).toLocaleString()}</td>
-          <td>{o.status}</td>
-          <td>{(o.amount_total/100).toFixed(2)}</td>
-          <td>{o.currency?.toUpperCase()}</td>
-        </tr>
-      {/each}
-    </table>
-  {/if}
+  <table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Status</th>
+      <th>Amount</th>
+      <th>Currency</th>
+    </tr>
+  </thead>
+  <tbody>
+    {#each orders as o}
+      <tr>
+        <td>{new Date(o.created_at).toLocaleString()}</td>
+        <td>{o.status}</td>
+        <td>{(o.amount_total/100).toFixed(2)}</td>
+        <td>{o.currency?.toUpperCase()}</td>
+      </tr>
+    {/each}
+  </tbody>
+</table>
+{/if}
 {/if}
