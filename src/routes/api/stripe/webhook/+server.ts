@@ -3,7 +3,7 @@ import Stripe from 'stripe';
 import type { RequestHandler } from '@sveltejs/kit';
 import { createClient } from '@supabase/supabase-js';
 
-const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY!, { apiVersion: '2024-06-20' });
+const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY!, { apiVersion: '2025-09-30' });
 
 export const POST: RequestHandler = async ({ request }) => {
   const sig = request.headers.get('stripe-signature');
