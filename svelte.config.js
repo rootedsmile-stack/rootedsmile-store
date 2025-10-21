@@ -1,11 +1,10 @@
 import adapter from '@sveltejs/adapter-cloudflare';
 import preprocess from 'svelte-preprocess';
 
-const config = {
+export default {
   preprocess: preprocess(),
   kit: {
     adapter: adapter(),
     csrf: { trustedOrigins: ['*'] }
   }
 };
-export default config;
