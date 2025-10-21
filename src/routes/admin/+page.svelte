@@ -26,8 +26,17 @@
 {:else if !isAdmin}
   <p>Not authorized.</p>
 {:else}
-  <table>
-    <tr><th>Date</th><th>Status</th><th>Amount</th><th>Currency</th><th>Intent</th></tr>
+ <table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Status</th>
+      <th>Amount</th>
+      <th>Currency</th>
+      <th>Intent</th>
+    </tr>
+  </thead>
+  <tbody>
     {#each orders as o}
       <tr>
         <td>{new Date(o.created_at).toLocaleString()}</td>
@@ -37,5 +46,6 @@
         <td>{o.stripe_payment_intent}</td>
       </tr>
     {/each}
-  </table>
+  </tbody>
+</table>
 {/if}
