@@ -8,18 +8,19 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-"dependencies": {
-  "@supabase/supabase-js": "^2.76.0",
-  "stripe": "^16.12.0",
-  "svelte": "^5.41.1",
-  "svelte-preprocess": "^5.1.4"
-},
-"devDependencies": {
-  "@sveltejs/adapter-cloudflare": "^4.9.0",
-  "@sveltejs/kit": "^2.47.2",
-  "@types/node": "^22.18.12",
-  "typescript": "^5.9.3",
-  "vite": "^5.4.21",
-  "@cloudflare/workers-types": "^4.20251014.0"
-}
+  "dependencies": {
+    "@supabase/supabase-js": "2.76.0",
+    "stripe": "16.12.0",
+    "svelte": "5.41.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20251014.0",
+    "@sveltejs/adapter-cloudflare": "4.9.0",
+    "@sveltejs/kit": "2.47.2",
+    "@sveltejs/vite-plugin-svelte": "4.0.0",
+    "@types/node": "22.18.12",
+    "svelte-preprocess": "5.1.4",
+    "typescript": "5.9.3",
+    "vite": "5.4.21"
+  }
 }
